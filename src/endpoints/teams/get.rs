@@ -226,7 +226,7 @@ impl<'a> HerokuEndpoint<Vec<TeamApp>> for TeamAppList<'a> {
         Method::Get
     }
     fn path(&self) -> String {
-        format!("teams/apps/{}", self.team_id)
+        format!("teams/{}/apps", self.team_id)
     }
 }
 
